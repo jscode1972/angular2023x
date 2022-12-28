@@ -1,0 +1,19 @@
+<div>
+  <button type="button" (click)="onLoad()">載入資料</button>
+  <button type="button" (click)="onClear()">清除資料</button><br/>
+  參考網址: 
+  <a target="_blank" href="https://stackblitz.com/edit/ng-book-ngif-directive"> ngif-directive </a> /
+  <a target="_blank" href="https://stackblitz.com/edit/ng-book-ngif-template-directive"> ngif-template </a> /
+  <a target="_blank" href="https://stackblitz.com/edit/ng-book-ngswitch-directive"> ngswitch-directive </a> 
+</div>
+<hr/>
+
+<div *ngIf="tasks.length === 0; then empty else list"></div>
+
+<ng-template #empty>
+  <div class="data-empty">無待辦事項</div>
+</ng-template>
+
+<ng-template #list>
+  <app-task *ngFor="let task of tasks; let odd = odd" [class.odd]="odd" [task]="task"></app-task>
+</ng-template>

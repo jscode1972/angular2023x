@@ -1,0 +1,11 @@
+<div>
+    <button type="button" (click)="onSwitch('a')">載入 A 元件</button>
+    <button type="button" (click)="onSwitch('b')">載入 B 元件</button><br/>
+    參考網址: 
+    <a target="_blank" href="https://stackblitz.com/edit/ng-book-componet-outlet"> component-outlet </a> 
+</div>
+
+<hr/>
+
+<div *ngComponentOutlet="component"></div>
+  

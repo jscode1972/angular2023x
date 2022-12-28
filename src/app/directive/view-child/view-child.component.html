@@ -1,0 +1,10 @@
+<div>
+    <p [style.fontSize.pt]="fontSize">目前文字尺寸：{{ fontSize }} pt</p>
+    參考網址: 
+    <a target="_blank" href="https://stackblitz.com/edit/ng-book-view-child-ngif"> view-child-ngif </a> <br/>
+</div>
+
+<hr/>
+子元件
+<app-font-size [(size)]="fontSize" *ngIf="display"></app-font-size>
+

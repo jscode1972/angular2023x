@@ -1,0 +1,30 @@
+  <div class="header">
+    指令 Directive
+  </div>
+
+  <div class="row">
+    <div class="column side">
+        內建指令-結構
+        <ul> 
+          <li><a [routerLink]="['ng-for']" routerLinkActive="active">*ngFor</a></li>
+          <li><a [routerLink]="['ng-if']" routerLinkActive="active">*ngIf (&ngSwitch)</a></li>
+          <li><a [routerLink]="['ng-component-outlet']" routerLinkActive="active">*ngComponentOutlet</a></li>
+          <li><a [routerLink]="['view-child']" routerLinkActive="active">@ViewChild</a></li>
+        </ul>
+        自訂指令
+        <ul> 
+          <li><a [routerLink]="['custom-attribute']" routerLinkActive="active">自訂屬性指令</a></li>
+          <li><a [routerLink]="['custom-structure']" routerLinkActive="active">自訂結構指令</a></li>
+        </ul>
+       
+        <a target="_blank" href="https://stackblitz.com/edit/ng-book-attribute-directive-confirm"> attribute-directive-confirm </a> <br/>
+        <a target="_blank" href="https://stackblitz.com/edit/ng-book-structural-directive"> structural-directive </a> <br/>
+        <a target="_blank" href="https://stackblitz.com/edit/ng-book-host-listener-decorator"> host-listener-decorator </a> <br/>
+        <a target="_blank" href="https://stackblitz.com/edit/ng-book-host-binding-decorator"> host-binding-decorator </a> <br/>
+    </div>
+    <div class="column content">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  

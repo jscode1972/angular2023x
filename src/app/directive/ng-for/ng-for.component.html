@@ -1,0 +1,27 @@
+<div>
+  <button type="button" (click)="onReset()">重設工作事項</button><br/>
+  參考網址: 
+  <a target="_blank" href="https://stackblitz.com/edit/ng-book-ngfor-directive"> ngfor-directive </a> /
+  <a target="_blank" href="https://stackblitz.com/edit/ng-book-ngfor-trackby-directive"> ngfor-trackby-directive </a>  /
+  <a target="_blank" href="https://stackblitz.com/edit/ng-book-ngswitch-directive"> ngswitch-directive </a> 
+</div>
+<hr/>
+
+<!-- <app-task 
+    *ngFor="let task of tasks; let i = index" 
+    [class.odd]="i % 2 === 1" 
+    [task]="task">
+</app-task> -->
+
+<app-task 
+    *ngFor="let task of tasks; let odd = odd" 
+    [class.odd]="odd" 
+    [task]="task">
+</app-task> 
+
+<!-- <app-task
+  *ngFor="let task of tasks; trackBy: trackByItems"
+  [task]="task">
+</app-task>-->
+
+
