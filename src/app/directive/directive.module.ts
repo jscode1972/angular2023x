@@ -17,7 +17,10 @@ import { ViewChildComponent } from './view-child/view-child.component';
 import { FontSizeComponent } from './view-child/font-size/font-size.component';
 // <button appCustButton>
 import { CustAttributeComponent } from './custom-attribute/cust-attribute.component';
-import { CustButtonDirective } from './custom-attribute/cust-button/cust-button.directive';
+import { CustButtonStyleDirective } from './custom-attribute/cust-button/cust-button-style.directive';
+import { CustButtonConfirmDirective } from './custom-attribute/cust-button/cust-button-confirm.directive';
+import { CustLimitDirective } from './custom-attribute/cust-limit/cust-limit.directive';
+import { CustLimitCaseDirective } from './custom-attribute/cust-limit/cust-limit-case.directive';
 
 @NgModule({
   declarations: [
@@ -27,8 +30,8 @@ import { CustButtonDirective } from './custom-attribute/cust-button/cust-button.
     NgForComponent,  // *ngFor
     NgIfComponent,   // *ngIf
     NgComponentOutletComponent, NgComponentAComponent, NgComponentBComponent, // *ngComponentOutlet
-    ViewChildComponent, FontSizeComponent, CustButtonDirective, CustAttributeComponent, // @ViewChild
-    //<button appCustButton>
+    ViewChildComponent, FontSizeComponent,  // @ViewChild
+    CustAttributeComponent, CustButtonStyleDirective, CustButtonConfirmDirective, CustLimitDirective, CustLimitCaseDirective, //<button appCustButton>
   ],
   imports: [
     BrowserModule,

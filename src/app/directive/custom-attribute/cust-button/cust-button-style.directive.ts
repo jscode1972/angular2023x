@@ -1,10 +1,10 @@
 import { Directive, OnInit, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[appCustButton]',
-  exportAs: 'customButton'
+  selector: '[appCustButtonStyle]',
+  exportAs: 'customButtonStyle'
 })
-export class CustButtonDirective implements OnInit {
+export class CustButtonStyleDirective implements OnInit {
 
   constructor(private elRef: ElementRef, 
               private renderer: Renderer2) {}

@@ -15,10 +15,7 @@ import { Component } from '@angular/core';
       <a target="_blank" href="https://stackblitz.com/edit/ng-book-router">ng-book-router</a> <br/>
       <br/>
       
-      <a target="_blank" href="xxxxx"> xxxx </a> <br/>
-      <a target="_blank" href="xxxxx"> xxxx </a> <br/>
-
-      </p>
+    </p>
   `,
   styles: [
   ]
