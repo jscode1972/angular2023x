@@ -1,0 +1,34 @@
+.half { 
+    flex: none; /* 固定配置 */
+    width: 50%;  
+}
+.forty {
+    flex: none; /* 固定配置 */
+    width: 45%; 
+}
+.thirty {
+    flex: none; /* 固定配置 */
+    width: 30%; 
+}
+
+/* 實驗開始 */
+.container { 
+    margin: 0 0;
+    padding: 0 0;
+    background-color: gray;
+}
+.fixed {
+    flex: none; /* 固定配置 */
+    width: 150px;  
+}
+.auto { 
+    flex: auto;  /* 自動把剩下空間補滿 */
+    color: white;
+    background-color:green ;
+}
+.tall {
+    height: 100px;
+}
+
+.aqua { background-color: aqua; }
+.red  { background-color: red; color: white;}

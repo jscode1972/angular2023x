@@ -1,0 +1,24 @@
+<pre>
+components\
+  * message.ts
+      export const messageFunc = (message: string) => &#123;
+          return `Here is your message: $&#123;message&#125;`;
+      &#125;;
+  * user.ts
+      export const userFunc = (user: string) => &#123;  ...  &#125;;
+      export const newUserFunc = (user: string) => &#123; ...  &#125;;  <a target="_blank" href="{{ topics.typescripe.index_ts }}">
+  * index.ts </a> 整合文件檔 (Consolidate) 
+      export * from "./message";
+      export * from "./user";
+  * <span style="color: red;">index.d.ts (佳)</span>
+-------------------------------------------------------
+[ server.ts ]
+    // import &#123; messageFunc &#125; from "./components/message";
+    // import &#123; userFunc, newUserFunc &#125; from "./components/user";
+    import &#123; messageFunc, userFunc, newUserFunc &#125; from "<span style="color: red;">./components</span>";
+    export const runServer = () => &#123;
+        console.log(messageFunc("Hello"));
+        console.log(userFunc("Jesse"));
+        console.log(newUserFunc("Jesse Again"));
+    &#125;;    
+</pre>

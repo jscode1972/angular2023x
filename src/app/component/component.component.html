@@ -1,0 +1,27 @@
+<h6>font-size 範例</h6>
+ 
+<a target="_blank" href="https://codesandbox.io/s/handsontable-angular-data-grid-hello-world-app-forked-910xle?file=/src/data-grid/utils/hooks-callbacks.ts">
+還蠻複雜, 一開始失敗應該是漏了參考</a> <br/>
+/ <a target="_blank" href="https://handsontable.com/docs/7.2.1/frameworks-wrapper-for-angular-custom-renderer-example.html">完整</a>
+/ <a target="_blank" href="https://handsontable.com/docs/javascript-data-grid/angular-custom-renderer-example/">教學 custom</a>
+/ <a target="_blank" href="https://handsontable.com/docs/javascript-data-grid/angular-basic-example/">教學 basic</a>
+ 
+
+<div>
+  <hot-table [settings]="hotSettings"></hot-table>
+</div>
+
+<div hidden>
+  <hot-table
+    [data]="dataset"
+    [colHeaders]="true"
+    [rowHeaders]="true"
+    height="auto"
+    licenseKey="non-commercial-and-evaluation">
+      <hot-column data="id"   title="ID" [readOnly]="true" ></hot-column>
+      <hot-column data="catg" title="類型"></hot-column>
+      <hot-column data="name" title="名稱"></hot-column>
+      <hot-column data="url"  title="網址"></hot-column>
+      <hot-column data="note" title="說明"></hot-column>
+  </hot-table>
+</div>

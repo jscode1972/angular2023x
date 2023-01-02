@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+[app-routing]
+<pre>
+const routes: Routes = [
+  &#123; path: '', component: HomeComponent &#125;,
+  &#123; path: 'home', redirectTo: '/', pathMatch: 'full' &#125;, 
+  &#123; path: 'example', component: ExampleComponent &#125;,  
+  &#123; path: 'weblink', component: WeblinkComponent &#125;,   
+  //&#123; path: 'xyz', children: [
+  //  &#123; path: '', component: XyzComponent &#125;,
+  //  &#123; path: 'x1', component: X1Component &#125;,
+  //  &#123; path: 'x2', component: X2Component &#125;
+  //  &#123; path: '**', redirectTo: '', pathMatch: 'full' &#125;,
+  //]&#125;,
+  &#123; path: '404', component: NotfoundComponent &#125;,
+  // 此行取消, 才能使用 child-routing
+  //&#123; path: '**', redirectTo: '404' &#125; 
+];
+
+@NgModule(&#123;
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+&#125;)
+export class AppRoutingModule &#123;&#125;
+</pre>
+
+    </div>
+
+<div class="col-sm">
+[child-routing]
+<pre>
+const routes: Routes = [
+  &#123; path: 'directive', 
+    component: DirectiveComponent,   
+    children: [
+      &#123; path: '', redirectTo: 'ng-for', pathMatch: 'full' &#125;, 
+      &#123; path: 'ng-for', component: NgForComponent &#125;,
+      &#123; path: 'ng-if', component: NgIfComponent &#125;,
+      //&#123; path: '**', redirectTo: '', pathMatch: 'full' &#125;,
+    ]
+  &#125;,
+  &#123;  path: 'test1', component: TestComponent &#125;,
+  &#123;  path: 'test2', component: TestComponent &#125;
+];
+
+@NgModule(&#123; 
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+&#125;)
+export class DirectiveRoutingModule &#123;&#125;
+</pre>
+  
+    </div>
+  </div>
+</div>

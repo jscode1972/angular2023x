@@ -17,7 +17,7 @@ import { CustLimitDirective } from './cust-limit/cust-limit.directive';
   <button type="button" (click)="onClick('red')" #button="customButtonStyle" appCustButtonStyle > 已套用變大 (變紅色) </button>
   <button type="button" appCustButtonConfirm="是否確認?" (confirm)="onConfirm()">按下確認</button>
 
-  <ng-container [appCustLimit]="userLimit">
+  <ng-container appCustLimit="userLimit">
   <span>目前的權限：{{ userLimit }}</span>
   <div class="item" *appCustLimitCase="'user'">這個區塊只有使用者看得到</div>
   <div class="item" *appCustLimitCase="'admin'">這個區塊只有管理員看得到</div>

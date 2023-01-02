@@ -1,0 +1,12 @@
+a { color:red; text-decoration-line: underline; }
+
+.wrapper {
+    display: flex; /* inline-flex 會變水平排, 但是內層自訂 width 無用*/
+    background-color: aqua;
+    width: 100%;
+}
+
+.section {
+    flex: none;
+    width: 50%;
+}

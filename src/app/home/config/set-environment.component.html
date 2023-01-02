@@ -1,0 +1,26 @@
+<a target="_blank" href="{{ links.enviroment.beginer }}">
+    Becoming an Angular Environmentalist</a>
+<pre>
+建立目錄及檔案 
+  src/environments
+    environment.ts 
+    environment.prod.ts
+<hr/>
+檔案內容
+  export const environment = &#123;
+    production: true,
+    webApi: 'http://localhost:4200/'
+  &#125;
+<hr/>
+修改 angular.json
+  "fileReplacements": [
+  &#123;
+    "replace": "src/environments/environment.ts",
+    "with": "src/environments/environment.prod.ts"
+  &#125;,
+<hr/>
+元件中
+  宣告 import &#123; environment &#125; from '../environments/environment';
+  使用 env = environment;
+
+</pre>

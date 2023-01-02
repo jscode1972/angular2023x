@@ -9,6 +9,7 @@ import { ViewChildComponent } from './view-child/view-child.component';
 import { CustAttributeComponent } from './custom-attribute/cust-attribute.component';
 
 const routes: Routes = [
+  // 非主頁子路由 directibe/xxx (法2) => 比較 => 主頁子路由 (法1)
   { path: 'directive', 
     component: DirectiveComponent,   
     children: [

@@ -1,0 +1,51 @@
+#angular.json
+<pre>
+&#123; 
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "projects": 
+    "angular2023": &#123;
+        "projectType": "application",
+        "sourceRoot": "src",
+        "prefix": "app",
+        "architect": &#123;
+            "build": &#123;
+                "options": &#123;
+                    "outputPath": "dist/angular2023",
+                    "index": "src/index.html",
+                    "main": "src/main.ts",
+                    "assets": [
+                        "src/favicon.ico",
+                        "src/assets"
+                    ],
+                    "styles": [
+                        "src/styles.css",
+                        "./node_modules/jquery-ui/themes/base/all.css",
+                        "./node_modules/admin-lte/dist/css/adminlte.css" // adminlte need
+                    ],
+                    "scripts": [
+                        "./node_modules/jquery/dist/jquery.js",
+                        "./node_modules/jquery-ui/dist/jquery-ui.js"
+                        "./node_modules/bootstrap/dist/js/bootstrap.js", // adminlte need
+                        "./node_modules/admin-lte/dist/js/adminlte.js"   // adminlte need
+                    ]
+                &#125;,
+                "configurations": &#123;
+                    "production": &#123;
+                        "budgets": [
+                           重要喔!
+                        ],
+                        "fileReplacements": [
+                        &#123; 重要喔!
+                          "replace": "src/environments/environment.ts",
+                          "with": "src/environments/environment.prod.ts"
+                        &#125;,
+                        "outputHashing": "all"
+                    &#125;,
+                    "development": &#123;
+                       ..待研究
+                    &#125;,
+                &#125;,
+                "defaultConfiguration": "production"
+            &#125;,
+            "serve": &#123;
+</pre>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 //import { PrimeNGConfig, MenuItem } from 'primeng/api';
+import { environment } from '../../src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular2023';
+  env = environment;
   
   /*
   menuMode = 'static';

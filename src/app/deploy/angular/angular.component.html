@@ -1,0 +1,44 @@
+<div id="tabs">
+    <ul>
+      <li><a href="#tabs-build" (click)="onShow('#tabs-build');">編譯指令</a></li>
+      <li><a href="#tabs-generate"(click)="onShow('#tabs-generate');">建立物件</a></li>
+    </ul>
+  
+<div id="tabs-build" class="child">                
+編譯指令
+<pre>
+$ ng new 專案
+$ ng build
+$ ng build --prod  // 預設 prod, 可省略
+$ ng build --base-href=/demo/
+$ ng build --base-href=./
+$ ng build --output-path=dis/xxx
+$ ng build --output-path=c:\initpub\wwwroot\xxx\
+$ ng run script
+</pre></div>
+
+<div id="tabs-generate" class="child" hidden>  
+建立物件指令
+<pre>
+$ ng g class xxx/task 
+$ ng g m layout       --routing               // 建立路由
+$ ng g c layout/header --flat                  // 不要目錄
+                       --inline-template  (-t) // 不要檔案
+                       --inline-style     (-s) // 不要檔案
+                       --module=路徑/模組       // 指定模組
+                       --skip-selector         // 動態或路由載入,不需要自訂選擇器 (搞懂了)
+                       --export                // 加入 export
+
+</pre></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+

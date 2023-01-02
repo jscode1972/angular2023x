@@ -6,5 +6,5 @@ export class Task {
     TaskSn!: string;
     TaskName!: string;
     State!: string;
-  }
+}
   
