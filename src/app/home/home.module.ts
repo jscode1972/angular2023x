@@ -12,6 +12,7 @@ import { LinksComponent } from './links/links.component';
 import { ConfigComponent } from './config.component';
 //
 import { ConfigModule } from './config/config.module';
+import { LessonComponent } from './lesson/lesson.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ConfigModule } from './config/config.module';
     UiListComponent,
     VideoComponent,
     LinksComponent,
-    ConfigComponent
+    ConfigComponent,
+    LessonComponent
   ],
   imports: [
     CommonModule,
