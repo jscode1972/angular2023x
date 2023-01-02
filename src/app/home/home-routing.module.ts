@@ -20,8 +20,8 @@ const routes: Routes = [
       { path: 'idea', component: IdeaComponent }, 
       { path: 'ui-list', component: UiListComponent }, 
       { path: 'video', component: VideoComponent }, 
-      { path: 'links', component: LinksComponent },
       { path: 'config', component: ConfigComponent }, // 路由弄不出第三層
+      { path: 'links', component: LinksComponent },
       // { path: '**', redirectTo: '', pathMatch: 'full' },
     ],
     

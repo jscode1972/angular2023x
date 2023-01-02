@@ -13,6 +13,7 @@ import { ComponentModule } from './component/component.module';
 import { DirectiveModule } from './directive/directive.module';
 import { WeblinkModule } from './weblink/weblink.module';
 import { HtmlModule } from './html/html.module';
+import { DemoComponent } from './demo/demo.component';
 
 //import {ButtonModule} from 'primeng/button';
 //import {AccordionModule} from 'primeng/accordion';
@@ -20,7 +21,8 @@ import { HtmlModule } from './html/html.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,

@@ -10,5 +10,5 @@ import { frameworks, topics, css } from 'src/app/shared';
 export class TodoComponent {
   links = frameworks;
   topics = topics;
-  flexbox = css.flexbox;
+  css = css;
 }

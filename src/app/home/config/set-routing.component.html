@@ -5,9 +5,9 @@
 [app-routing]
 <pre>
 const routes: Routes = [
-  &#123; path: '', component: HomeComponent &#125;,
-  &#123; path: 'home', redirectTo: '/', pathMatch: 'full' &#125;, 
-  &#123; path: 'example', component: ExampleComponent &#125;,  
+  // 空值一律第一條,導入第二條
+  &#123; path: '', redirectTo: '/', pathMatch: 'full' &#125;, 
+  &#123; path: 'home', component: HomeComponent &#125;,
   &#123; path: 'weblink', component: WeblinkComponent &#125;,   
   //&#123; path: 'xyz', children: [
   //  &#123; path: '', component: XyzComponent &#125;,
@@ -33,17 +33,18 @@ export class AppRoutingModule &#123;&#125;
 [child-routing]
 <pre>
 const routes: Routes = [
-  &#123; path: 'directive', 
+  &#123; path: 'test1', component: TestComponent &#125;,
+  &#123; path: 'test2', 
     component: DirectiveComponent,   
     children: [
-      &#123; path: '', redirectTo: 'ng-for', pathMatch: 'full' &#125;, 
-      &#123; path: 'ng-for', component: NgForComponent &#125;,
-      &#123; path: 'ng-if', component: NgIfComponent &#125;,
+      // 空值一律第一條,導入第二條
+      &#123; path: '', redirectTo: 'x1', pathMatch: 'full' &#125;, 
+      &#123; path: 'x1', component: X1Component &#125;,
+      &#123; path: 'x2', component: X2Component &#125;,
       //&#123; path: '**', redirectTo: '', pathMatch: 'full' &#125;,
     ]
   &#125;,
-  &#123;  path: 'test1', component: TestComponent &#125;,
-  &#123;  path: 'test2', component: TestComponent &#125;
+  &#123;  path: 'test3', component: TestComponent &#125;
 ];
 
 @NgModule(&#123; 

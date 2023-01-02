@@ -1,6 +1,55 @@
-[使用服務] 
+<div class="row">
+<div class="col-sm-5">
+<a target="_blank" href="{{ topics.folder_structure.best_practices }}">資料夾架構最佳實踐!!!! (demo就用這個)</a> 
 <pre>
-統一參數 (enviroment/comm/) => 不用 import 很深的檔案
+Folder for each Angular Module
+- Root Module (根目錄)
+- Feature Modules (功能模塊)
+  - components, directives, pipes, 
+  - pages (元件.component.ts -> 元件.page.ts)
+      每個路由都是一個頁面。路由可能包含多個元件。
+- Shared Module (共享元件可以放在獨立的元件資料夾)
+    components  (models / guards / mocks)
+-  Core Module
+
+
+<span style="color:red; font-size: 22px;">還有一個終極版 template 要放進來!!!</span> 
+
+
+[使用服務] 
 建構子  => <a target="_blank" href="{{ topics.issues.private_vs_public }}" style="color:red;"> private vs public</a> 
   元件不要直接使用服務, 須透過方法 或 property(getter)
 </pre>
+</div>
+
+<div class="col-sm-4">
+
+</div>
+
+<div class="col-sm-3">
+<a target="_blank" href="{{ topics.folder_structure.angular_folder }}">Angular Folder Structure</a> 最終範例
+<pre>
+- app.module.ts
+- app.component.ts
+- modules
+  - module1
+    - components
+    - pages
+      module1.service.ts
+      module1.module.ts
+      module1.routes.ts
+  - module2
+      - components
+      - pages
+      module2.service.ts
+      module2.module.ts
+      module2.routes.ts
+- shared
+  - components
+  - mocks
+  - models
+  - ...
+</pre>
+</div>
+
+</div>
