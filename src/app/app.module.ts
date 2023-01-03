@@ -2,23 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 //
-import { HotTableModule } from '@handsontable/angular';
-import { registerAllModules } from 'handsontable/registry';
-// register Handsontable's modules
-registerAllModules();
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// register Handsontable's modules
+import { HotTableModule } from '@handsontable/angular';
+import { registerAllModules } from 'handsontable/registry';
+registerAllModules();
 //
 import { HomeModule } from './home/home.module';
 import { LayoutModule } from './layout/layout.module';
-import { ComponentModule } from './topics/components/component.module';
 import { DirectiveModule } from './directive/directive.module';
 import { WeblinkModule } from './weblink/weblink.module';
+// Angular
+import { ComponentModule } from './angular/components/component.module';
+import { ServicesModule } from './angular/services/services.module';
+// Demo
+import { DemoModule } from './demo/demo.module';
+// Xyz
 
 //import { WildcardModule } from './wildcard.module';
 import { WildcardRoutingModule } from './wildcard-routing.module';
-import { ServicesModule } from './topics/services/services.module';
-import { LayoutDemoModule } from './xyz/layout-demo/layout-demo.module';
 
 //import {ButtonModule} from 'primeng/button';
 //import {AccordionModule} from 'primeng/accordion';
@@ -39,12 +42,13 @@ import { LayoutDemoModule } from './xyz/layout-demo/layout-demo.module';
     HomeModule,
     LayoutModule,    // 
     WeblinkModule,   // 子路由模組
-    // topics
+    // Angular topics
     ComponentModule, // 子路由模組需透過主模組抓到
     DirectiveModule, // 子路由模組需透過主模組抓到
     ServicesModule,  // 子路由模組需透過主模組抓到
+    // Demo
+    DemoModule,
     // xyz
-    LayoutDemoModule,
     
     // wildcard 保持最後一個
     WildcardRoutingModule,

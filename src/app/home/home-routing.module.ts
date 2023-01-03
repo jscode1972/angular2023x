@@ -10,7 +10,6 @@ import { LinksComponent } from './links/links.component';
 import { ConfigComponent } from './config.component';
 
 const routes: Routes = [
-  // 主頁子路由 (法1) => 比較 => 非主頁子路由 directibe/xxx (法2)
   { path: '', redirectTo: 'home', pathMatch: 'full' }, // 空寫在上面
   { path: 'home', 
     component: HomeComponent,   
