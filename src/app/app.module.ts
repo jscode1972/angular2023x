@@ -18,6 +18,7 @@ import { HtmlModule } from './html/html.module';
 
 //import { WildcardModule } from './wildcard.module';
 import { WildcardRoutingModule } from './wildcard-routing.module';
+import { ServicesModule } from './topics/services/services.module';
 
 //import {ButtonModule} from 'primeng/button';
 //import {AccordionModule} from 'primeng/accordion';
@@ -40,6 +41,7 @@ import { WildcardRoutingModule } from './wildcard-routing.module';
     DirectiveModule, // 子路由模組
     WeblinkModule,   // 子路由模組
     HtmlModule,
+    ServicesModule,
     
     // wildcard 保持最後一個
     WildcardRoutingModule,

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Root, Properties, WeatherService } from 'src/app/shared';
 
 @Component({
   selector: 'app-ui-list',
@@ -8,22 +7,6 @@ import { Root, Properties, WeatherService } from 'src/app/shared';
 })
 export class UiListComponent implements OnInit {
 
-  //data : Root | undefined;
-  prop !: Properties;
-
-  constructor(private svc : WeatherService){ }
-
   ngOnInit(): void { }
 
-  showWeather() {
-    this.svc.getWearher()
-      // clone the data object, using its known Config shape
-      .subscribe(
-        d => {
-          console.log(d); 
-          this.prop = d.properties;
-          console.log(this.prop); 
-      }
-    ); 
-  }
 }
