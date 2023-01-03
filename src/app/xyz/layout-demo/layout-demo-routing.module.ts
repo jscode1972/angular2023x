@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { CssComponent } from './css/css.component';
+import { LayoutDemoComponent } from './pages/layout-demo.component';
 
 const routes: Routes = [
-  { path: 'html', 
-    component: CssComponent,   
+  { path: 'layout-demo', 
+    component: LayoutDemoComponent,   
     children: [
-       { path: '', redirectTo: 'css', pathMatch: 'full' }, 
-       { path: 'css', component: CssComponent },
+       //{ path: '', redirectTo: 'css', pathMatch: 'full' }, 
+       //{ path: 'css', component: CssComponent },
       // { path: '**', component:  CssComponent },
     ]
   }
@@ -18,4 +17,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HtmlRoutingModule { }
+export class LayoutDemoRoutingModule { }

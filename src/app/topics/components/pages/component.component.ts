@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import Handsontable from "handsontable";
-import { frameworks, stackblitz } from '../shared';
+import { frameworks, stackblitz } from '../../../shared';
 
 @Component({
   selector: 'app-component',
