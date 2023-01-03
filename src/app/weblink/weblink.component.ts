@@ -8,7 +8,7 @@ declare let $:any; // 當然 let 也可以
 @Component({
   selector: 'app-weblink',
   templateUrl: './weblink.component.html',
-  styleUrls: ['../css/tabs-c3school.css']
+  styleUrls: ['../shared/tabs-c3school.css']
 })
 export class WeblinkComponent implements OnInit {
   

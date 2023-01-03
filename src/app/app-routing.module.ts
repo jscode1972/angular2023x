@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DemoComponent } from './demo/demo.component';
 //
 import { WeblinkComponent } from './weblink/weblink.component';
 
@@ -9,7 +8,6 @@ const routes: Routes = [
   //{ path: '', component: HomeComponent },
   //{ path: 'home', redirectTo: '', pathMatch: 'full' },
   { path: 'weblink', component: WeblinkComponent },   // 網路連結
-  { path: 'demo', component: DemoComponent }
   //{ path: 'xyz', children: [
   //  { path: '', component: XyzComponent },
   //  { path: 'x1', component: X1Component },

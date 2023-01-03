@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+//
 import { HotTableModule } from '@handsontable/angular';
 import { registerAllModules } from 'handsontable/registry';
 // register Handsontable's modules
@@ -13,7 +15,9 @@ import { ComponentModule } from './component/component.module';
 import { DirectiveModule } from './directive/directive.module';
 import { WeblinkModule } from './weblink/weblink.module';
 import { HtmlModule } from './html/html.module';
-import { DemoComponent } from './demo/demo.component';
+
+//import { WildcardModule } from './wildcard.module';
+import { WildcardRoutingModule } from './wildcard-routing.module';
 
 //import {ButtonModule} from 'primeng/button';
 //import {AccordionModule} from 'primeng/accordion';
@@ -21,12 +25,13 @@ import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DemoComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    //
     HotTableModule,
     // 保險起見, 有子路由模組 => 必須加入
     HomeModule,
@@ -35,6 +40,10 @@ import { DemoComponent } from './demo/demo.component';
     DirectiveModule, // 子路由模組
     WeblinkModule,   // 子路由模組
     HtmlModule,
+    
+    // wildcard 保持最後一個
+    WildcardRoutingModule,
+
     //ButtonModule,
     //AccordionModule,
     //SplitButtonModule

@@ -22,11 +22,9 @@ const routes: Routes = [
       { path: 'video', component: VideoComponent }, 
       { path: 'config', component: ConfigComponent }, // 路由弄不出第三層
       { path: 'links', component: LinksComponent },
-      // { path: '**', redirectTo: '', pathMatch: 'full' },
-    ],
-    
-  },
-  //{ path: '**', redirectTo: 'home', pathMatch: 'full' },// 此行取消, 不然沒法使用 child-routing
+      { path: '**', redirectTo: '', pathMatch: 'full'  },
+    ]
+  }
 ];
 
 @NgModule({

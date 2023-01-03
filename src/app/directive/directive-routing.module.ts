@@ -19,11 +19,9 @@ const routes: Routes = [
        { path: 'ng-component-outlet', component: NgComponentOutletComponent },
        { path: 'view-child', component: ViewChildComponent },
        { path: 'custom-attribute', component: CustAttributeComponent },
-       //{ path: 'custom-structure', component: CustStructureComponent }, 
-      // { path: '**', redirectTo: '', pathMatch: 'full' },
+       //{ path: '**', component: OopsComponent }, 
     ]
-  },
-  ////{ path: 'test', component: TestComponent },
+  }
 ];
 
 @NgModule({

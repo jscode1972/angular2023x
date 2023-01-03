@@ -9,10 +9,9 @@ const routes: Routes = [
     children: [
        { path: '', redirectTo: 'css', pathMatch: 'full' }, 
        { path: 'css', component: CssComponent },
-      // { path: '**', redirectTo: '', pathMatch: 'full' },
+      // { path: '**', component:  CssComponent },
     ]
-  },
-  ////{ path: 'test', component: TestComponent },
+  }
 ];
 
 @NgModule({

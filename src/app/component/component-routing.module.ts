@@ -6,12 +6,11 @@ const routes: Routes = [
   { path: 'component', 
     component: ComponentComponent,   
     children: [
-     //{ path: '', redirectTo: 'ng-for', pathMatch: 'full' }, 
-     //{ path: 'custom-structure', component: CustStructureComponent }, 
-     //{ path: '**', redirectTo: '', pathMatch: 'full' },
+     //{ path: '', redirectTo: 'next', pathMatch: 'full' }, 
+     //{ path: 'next', component: NextComponent }, 
+     //{ path: '**', redirectTo: component: OopsComponent },
     ]
-  },
-  ////{ path: 'test', component: TestComponent },
+  }
 ];
 
 @NgModule({
