@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MiscRoutingModule } from './misc-routing.module';
-import { RxjsComponent } from './rxjs/rxjs.component';
+import { AdvancedRoutingModule } from './advanced-routing.module';
 import { GitComponent } from './git/git.component';
 import { FirebaseComponent } from './firebase/firebase.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
   declarations: [
-    RxjsComponent,
     GitComponent,
-    FirebaseComponent
+    FirebaseComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,
-    MiscRoutingModule
+    AdvancedRoutingModule
   ]
 })
-export class MiscModule { }
+export class AdvancedModule { }

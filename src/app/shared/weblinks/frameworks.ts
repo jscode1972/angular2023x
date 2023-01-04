@@ -52,5 +52,9 @@ export const frameworks = {
     },
     ng_lightning : {
         start: 'https://ng-lightning.github.io/ng-lightning/#/' //AI推薦
+    },
+    mat_UI: {
+        top8: 'https://flatlogic.com/blog/top-8-material-ui-templates/',
+        hulk: 'https://hulk.theironnetwork.org/app/uicomponents/avatars'
     }
 };

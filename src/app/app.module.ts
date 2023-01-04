@@ -21,7 +21,7 @@ import { DemoModule } from './demo/demo.module';
 // Xyz
 
 //import { WildcardModule } from './wildcard.module';
-import { WildcardRoutingModule } from './wildcard-routing.module';;
+import { WildcardRoutingModule } from './wildcard-routing.module';
 
 //import {ButtonModule} from 'primeng/button';
 //import {AccordionModule} from 'primeng/accordion';
@@ -29,7 +29,7 @@ import { WildcardRoutingModule } from './wildcard-routing.module';;
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     // 系統內建模組
