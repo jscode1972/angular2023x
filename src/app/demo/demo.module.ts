@@ -3,16 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { DemoRoutingModule } from './demo-routing.module';
 import { DemoComponent } from './pages/demo.component';
-import { FlexboxComponent } from './flexbox/flexbox.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
     DemoComponent,
-    FlexboxComponent
   ],
   imports: [
     CommonModule,
-    DemoRoutingModule
+    DemoRoutingModule,
+    SharedModule
   ]
 })
 export class DemoModule { }

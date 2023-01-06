@@ -22,6 +22,8 @@ import { DemoModule } from './demo/demo.module';
 
 //import { WildcardModule } from './wildcard.module';
 import { WildcardRoutingModule } from './wildcard-routing.module';
+import { RepoModule } from './repo/repo.module';
+import { TopicsModule } from './topics/topics.module';
 
 //import {ButtonModule} from 'primeng/button';
 //import {AccordionModule} from 'primeng/accordion';
@@ -48,6 +50,8 @@ import { WildcardRoutingModule } from './wildcard-routing.module';
     ServicesModule,  // 子路由模組需透過主模組抓到
     // Demo
     DemoModule,
+    RepoModule,
+    TopicsModule,
     // xyz
     
     // wildcard 保持最後一個

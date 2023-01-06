@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <div class="left">
+        <ul>
+            <a [routerLink]="['compo']" routerLinkActive="active"><li>元件</li></a> 
+            <a [routerLink]="['route']" routerLinkActive="active"><li>路由</li></a> 
+            <a [routerLink]="['service']"><li>服務</li></a> 
+            <a [routerLink]="['directive']"><li>指令</li></a> 
+            <a [routerLink]="['pipe']"><li>管道</li></a> 
+            <a [routerLink]="['form']"><li>表單</li></a> 
+            <a [routerLink]="['deploy']"><li>部署</li></a> 
+            <a [routerLink]="['other']" routerLinkActive="active"><li>其他</li></a> 
+        </ul>
+    </div>
+
+    <div class="content">
+       <router-outlet></router-outlet>
+    </div>
+</div>

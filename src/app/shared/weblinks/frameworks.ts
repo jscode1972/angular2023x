@@ -55,6 +55,9 @@ export const frameworks = {
     },
     mat_UI: {
         top8: 'https://flatlogic.com/blog/top-8-material-ui-templates/',
-        hulk: 'https://hulk.theironnetwork.org/app/uicomponents/avatars'
+        hulk: 'https://hulk.theironnetwork.org/app/uicomponents/avatars', // 好看
+    },
+    SBAdmin2: {
+        will: 'https://www.youtube.com/watch?v=qvRfvHrRyiw', // 有
     }
 };
