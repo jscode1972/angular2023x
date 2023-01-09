@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { AngularComponent } from './angular/angular.component';
 import { NpmComponent } from './npm/npm.component';
 import { AdminlteComponent } from './adminlte/adminlte.component';
-import { PrimengComponent } from './primeng/primeng.component';
 import { HandsonComponent } from './handson/handson.component';
 
 @NgModule({
@@ -11,7 +10,6 @@ import { HandsonComponent } from './handson/handson.component';
     AngularComponent,
     NpmComponent,
     AdminlteComponent,
-    PrimengComponent,
     HandsonComponent
   ],
   imports: [
