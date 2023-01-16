@@ -1,16 +1,15 @@
 <h6>font-size 範例</h6>
  
 <a target="_blank" href="https://codesandbox.io/s/handsontable-angular-data-grid-hello-world-app-forked-910xle?file=/src/data-grid/utils/hooks-callbacks.ts">
-還蠻複雜, 一開始失敗應該是漏了參考</a> <br/>
+還蠻複雜, 一開始失敗應該是漏了參考2</a> <br/>
 / <a target="_blank" href="https://handsontable.com/docs/7.2.1/frameworks-wrapper-for-angular-custom-renderer-example.html">完整</a>
 / <a target="_blank" href="https://handsontable.com/docs/javascript-data-grid/angular-custom-renderer-example/">教學 custom</a>
 / <a target="_blank" href="https://handsontable.com/docs/javascript-data-grid/angular-basic-example/">教學 basic</a>
  
+<br/>
+<hr/>
 
-<div>
-  <hot-table [settings]="hotSettings"></hot-table>
-</div>
-
+<div hidden>   <hot-table [settings]="hotSettings"></hot-table></div>
 <div hidden>
   <hot-table
     [data]="dataset"
@@ -25,3 +24,90 @@
       <hot-column data="note" title="說明"></hot-column>
   </hot-table>
 </div>
+
+<div style="display: flex;">
+<div>基本繫結
+<ul style="flex:none" >
+  <li><a target="_blank"  href="{{blitz.text_interpolation}}">text_interpolation</a></li>
+  <li><a target="_blank"  href="{{blitz.event_binding}}">event_binding</a></li>
+  <li><a target="_blank"  href="{{blitz.property_binding}}">property_binding</a></li>
+  <li><a target="_blank"  href="{{blitz.attribute_binding}}">attribute_binding</a></li>
+  <li><a target="_blank"  href="{{blitz.single_style_binding}}">single_style_binding</a></li>
+  <li><a target="_blank"  href="{{blitz.mutli_style_binding}}">mutli_style_binding</a></li>
+  <li><a target="_blank"  href="{{blitz.class_binding}}">class_binding</a></li>
+</ul>
+</div>
+
+<div>巢狀互動
+<ul style="flex:none">
+  <li><a target="_blank"  href="{{blitz.input_property}}">input_property</a></li>
+  <li><a target="_blank"  href="{{blitz.input_setter_property}}">input_setter_property</a></li>
+  <li><a target="_blank"  href="{{blitz.attribute_property}}">attribute_property</a></li>
+</ul>
+</div>
+
+<div>@Output
+<ul style="flex:none">
+  <li><a target="_blank"  href="{{blitz.output_event}}">output_event</a></li>
+  <li><a target="_blank"  href="{{blitz.two_way_binding}}">two_way_binding</a></li>
+  <li><a target="_blank"  href="{{blitz.template_reference_variable}}">template_reference_variable</a></li>
+</ul>
+頁面範本 ng-template
+<ul>
+  <li><a target="_blank"  href="{{blitz.ng_template}}">ng_template</a></li>
+  <li><a target="_blank"  href="{{blitz.ng_template_variable}}">ng_template_variable</a></li>
+  <li><a target="_blank"  href="{{blitz.ng_template_implicit}}">ng_template_implicit</a></li>
+</ul>
+</div>
+
+<div>動態內容投影
+<ul style="flex:none">
+  <li><a target="_blank"  href="{{blitz.ng_content}}">ng_content</a></li>
+  <li><a target="_blank"  href="{{blitz.form_container}}">form_container</a></li>
+</ul>
+生命週期
+<ul>
+  <li><a target="_blank"  href="{{blitz.changes_life}}">changes_life</a></li>
+  <li><a target="_blank"  href="{{blitz.do_check_life}}">do_check_life</a></li>
+  <li><a target="_blank"  href="{{blitz.content_life}}">content_life</a></li>
+  <li><a target="_blank"  href="{{blitz.view_life}}">view_life</a></li>
+</ul>
+</div>
+
+<div>封裝模式 (樣式範圍)
+<ul style="flex:none">
+  <li><a target="_blank"  href="blitz.encapsulation_none">encapsulation_none</a></li>
+  <li><a target="_blank"  href="blitz.encapsulation_shadow">encapsulation_shadow</a></li>
+  <li><a target="_blank"  href="blitz.host_selector">host_selector</a></li>
+</ul>
+
+
+
+
+<ul hidden>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+<li><a target="_blank"  href="blitz.xx">text_interpolation</a></li>
+</ul>
