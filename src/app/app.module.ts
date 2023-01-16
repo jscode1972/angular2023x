@@ -10,7 +10,6 @@ import { registerAllModules } from 'handsontable/registry';
 registerAllModules();
 //
 import { HomeModule } from './home/home.module';
-import { LayoutModule } from './layout/layout.module';
 import { DirectiveModule } from './directive/directive.module';
 import { WeblinkModule } from './weblink/weblink.module';
 // Angular
@@ -42,7 +41,6 @@ import { TopicsModule } from './topics/topics.module';
     HotTableModule,
     // 保險起見, 有子路由模組 => 必須加入
     HomeModule,
-    LayoutModule,    // 
     WeblinkModule,   // 子路由模組
     // Angular topics
     ComponentModule, // 子路由模組需透過主模組抓到

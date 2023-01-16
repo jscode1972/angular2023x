@@ -9,11 +9,11 @@ export const frameworks = {
         top10: 'https://www.syncfusion.com/blogs/post/top-10-angular-component-libraries-for-2022.aspx',  // 有
         dashboard_23 : 'https://blog.hubspot.com/website/best-html5-admin-dashboard-templates' // 有
     },
-    adminlte: {
+    /*adminlte: {
         docs32: 'https://adminlte.io/docs/3.2/index.html',
         starter: 'https://adminlte.io/themes/v3/starter.html',
         header: 'https://adminlte.io/docs/3.2/components/main-header.html'
-    },
+    },*/
     primeng: {
         faces: 'https://www.primefaces.org/primeng/',
         setup: 'https://www.primefaces.org/primeng/setup',

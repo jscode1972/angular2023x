@@ -28,9 +28,6 @@ export const topics = {
     typescripe: {
         index_ts: 'https://betterprogramming.pub/consolidate-your-typescript-imports-with-index-ts-files-cee934c665a7',
     },
-    tools: {
-        codebeautify: 'https://codebeautify.org/htmlviewer'
-    }, 
     issues: {
         private_vs_public: 'https://stackoverflow.com/questions/46596399/typescript-dependency-injection-public-vs-private', // 有
         kappa_defeat: 'https://ng-bootstrap.github.io/#/components/typeahead/examples', // 有
