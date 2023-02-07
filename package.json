@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "copy": "rm -f ../jscode1972.github.io/*.*; mv ../jscode1972.github.io/dist/*.* ../jscode1972.github.io"
   },
   "private": true,
   "dependencies": {
